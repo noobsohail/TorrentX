@@ -311,14 +311,14 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 if is_file is None:
                     msgg = f"🔌 ᴄᴏɴɴᴇᴄᴛɪᴏɴs: {file.connections}"
                 else:
-                    msgg = f"🟢 sᴇᴇᴅᴇʀ: {file.num_seeders}\n🔴 ᴘᴇᴇʀ: {file.connections}"
+                    msgg = f"🌱 sᴇᴇᴅᴇʀ: {file.num_seeders}\n🌏 ᴘᴇᴇʀ: {file.connections}"
 
                 percentage = int(file.progress_string(0).split('%')[0])
                 prog = "[{0}{1}]".format("".join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 10))]),"".join([UN_FINISHED_PROGRESS_STR for i in range(8 - math.floor(percentage / 10))]))
 
                 msg += f"\n<b>📥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ 📥</b>"
                 msg += f"\n\n<code>{downloading_dir_name}</code>"
-                msg += f"\n{prog}"
+                msg += f"\n\n{prog}"
                 msg += f"\n\n💯 ᴘᴇʀᴄᴇɴᴛᴀɢᴇ: {file.progress_string()}"                
                 msg += f"\n💾 ᴛᴏᴛᴀʟ ғɪʟᴇ sɪᴢᴇ: {file.total_length_string()}"
                 msg += f"\n⏰ ᴇᴛᴀ: {file.eta_string()}"
