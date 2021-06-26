@@ -1,42 +1,50 @@
 {
-  "name": "Telegram Torrent Leecher",
-  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
-  "keywords": [
-    "telegram"
-  ],
-  "repository": "https://github.com/yasirarism",
-  "success_url": "https://t.me/ymoviez",
-  "website": "https://www.yasir.my.id",
-  "stack": "container"
-  {
-  "env": {
-    "TG_BOT_TOKEN": {
-      "description": "Your bot token, Get it from @Botfather.",
-      "value": ""
-    },
-    "APP_ID": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": ""
-    },
-    "API_HASH": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": ""
-    },
-    "AUTH_CHANNEL": {
-      "description": "Owner userid to use for getting logs..",
-      "value": ""
-	},
-    "OWNER_ID": {
-      "description": "Owner userid to use for getting logs..",
-      "value": ""
-    },
-    "EDIT_SLEEP_TIME_OUT": {
-      "description": "delay update message for avoid floodwait",
-      "required": false
-    },
-    "MAX_TG_SPLIT_FILE_SIZE": {
-      "description": "max size for split file",
-      "required": false
+    "name": "Leech Bot",
+    "description": "leech bot using aria as engine",
+    "logo": "https://telegra.ph/file/a42546af86d48c129c0f4.jpg",
+    "keywords": [
+      "bot",
+      "telegram",
+      "python"
+    ],
+    "repository": "https://github.com/yuno74/TorrentLeechX",
+    "website": "https://github.com/yuno74/TorrentLeechX",
+    "success_url": "https://t.me/arata74",
+    "stack": "container",
+    "env": {
+      "ENV": {
+        "description": "Setting this to ANYTHING will enable Webhooks when in env mode",
+        "value": "ANYTHING"
+      },
+      "TG_BOT_TOKEN": {
+        "description": "The telegram bot token that you get from @BotFather.",
+        "required": true
+      },
+      "APP_ID": {
+        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "required": true
+      },
+      "AUTH_CHANNEL": {
+        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "required": true
+      },
+      "EDIT_SLEEP_TIME_OUT": {
+        "description": "The path to the local folder where the downloads should be downloaded to.",
+        "value": "15",
+        "required": false
+	  },
+      "MAX_TG_SPLIT_FILE_SIZE": {
+        "description": "The path to the local folder where the downloads should be downloaded to.",
+        "value": "1072864000",
+        "required": false
     }
   }
 }
