@@ -100,7 +100,7 @@ async def download_tg(client, message):
         await asyncio.sleep(5)
         if the_real_download_location:
             await mess_age.edit_text(
-                f""📥 ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴛᴏ\n<code>{the_real_download_location}</code>\n<u>{ms}</u> sᴇᴄᴏɴᴅ"
+                f"📥 ᴅᴏᴡɴʟᴏᴀᴅᴇᴅ ᴛᴏ\n<code>{the_real_download_location}</code>\n<u>{ms}</u> sᴇᴄᴏɴᴅ"
             )
         else:
             await mess_age.edit_text("🔴ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴀɴᴄᴇʟʟᴇᴅ ᴏʀ sᴏᴍᴇᴛʜɪɴɢ ʜᴀᴘᴘᴇɴᴇᴅ🔴")
