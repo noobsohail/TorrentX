@@ -87,7 +87,7 @@
         "required": false
 	  },
       "TOGGLE_VID": {
-        "description": "Custom Cmd for TOGGLE_DOC default is /togglevid",
+        "description": "Custom Cmd for TOGGLE_VID default is /togglevid",
         "value": "",
         "required": false
 	  },
