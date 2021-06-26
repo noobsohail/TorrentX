@@ -83,7 +83,7 @@ class Progress:
                 "".join(
                     [
                         UN_FINISHED_PROGRESS_STR
-                        for i in range(10 - math.floor(percentage / 10))
+                        for i in range(12.5 - math.floor(percentage / 10))
                     ]
                 ),
                 round(percentage, 2),
