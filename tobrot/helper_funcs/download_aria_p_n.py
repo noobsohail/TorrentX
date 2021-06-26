@@ -318,7 +318,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
 
                 msg += f"\n<b>📥 ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ 📥</b>"
                 msg += f"\n\n<code>{downloading_dir_name}</code>"
-                msg += f"{prog}"
+                msg += f"\n{prog}"
                 msg += f"\n\n💯 ᴘᴇʀᴄᴇɴᴛᴀɢᴇ: {file.progress_string()}"                
                 msg += f"\n💾 ᴛᴏᴛᴀʟ ғɪʟᴇ sɪᴢᴇ: {file.total_length_string()}"
                 msg += f"\n⏰ ᴇᴛᴀ: {file.eta_string()}"
