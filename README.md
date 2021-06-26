@@ -3,17 +3,17 @@
 ---
 
 # TorrentLeechX (a modified fork of TorrentLeechGdrive with Extra Features....)
-![GitHub Repo stars](https://img.shields.io/github/stars/XcodersHub/TorrentLeechX?color=orange&style=for-the-badge)
-![GitHub forks](https://img.shields.io/github/forks/XcodersHub/TorrentLeechX?color=green&style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/XcodersHub/TorrentLeechX?color=red&style=for-the-badge)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/XcodersHub/TorrentLeechX?color=black&style=for-the-badge)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/XcodersHub/TorrentLeechX?color=yellow&style=for-the-badge)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/XcodersHub/TorrentLeechX?color=violet&style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/XcodersHub/TorrentLeechX?color=teal&style=for-the-badge)
-![GitHub repo size](https://img.shields.io/github/repo-size/XcodersHub/TorrentLeechX?color=white&style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/XcodersHub/TorrentLeechX?color=blue&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/yuno74/TorrentLeechX?color=orange&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/yuno74/TorrentLeechX?color=green&style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/yuno74/TorrentLeechX?color=red&style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/yuno74/TorrentLeechX?color=black&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/yuno74/TorrentLeechX?color=yellow&style=for-the-badge)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/yuno74/TorrentLeechX?color=violet&style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/yuno74/TorrentLeechX?color=teal&style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/yuno74/TorrentLeechX?color=white&style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/yuno74/TorrentLeechX?color=blue&style=for-the-badge)
 
-<p align="center"> <a href="https://t.me/arata74" target="_blank"> <img src="https://shields.io/badge/Support--Group-Join_Now-navy?logo=&style=for-the-badge" alt="support group" width="400" height="45"/>
+<p align="center"> <a href="https://t.me/arata74" target="_blank"> <img src="https://shields.io/badge/Contact_Me_Now-navy?logo=&style=for-the-badge" alt="Contact me" width="400" height="45"/>
 
 ---
 
