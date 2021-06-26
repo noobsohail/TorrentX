@@ -1,11 +1,39 @@
 {
   "name": "Telegram Torrent Leecher",
-  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Using Aria as engine",
+  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/yuno74/TorrentLeechX/",
-  "success_url": "https://t.me/arata74",
-  "website": "https://t.me/arata74",
+  "repository": "https://github.com/yasirarism",
+  "success_url": "https://t.me/ymoviez",
+  "website": "https://www.yasir.my.id",
   "stack": "container"
-}
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your bot token, Get it from @Botfather.",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from https://my.telegram.org",
+      "value": ""
+    },
+    "AUTH_CHANNEL": {
+      "description": "Owner userid to use for getting logs..",
+      "value": ""
+	},
+    "OWNER_ID": {
+      "description": "Owner userid to use for getting logs..",
+      "value": ""
+    },
+    "EDIT_SLEEP_TIME_OUT": {
+      "description": "delay update message for avoid floodwait",
+      "required": false
+    },
+    "MAX_TG_SPLIT_FILE_SIZE": {
+      "description": "max size for split file",
+      "required": false
+	}
