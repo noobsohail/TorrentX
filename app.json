@@ -36,4 +36,6 @@
     "MAX_TG_SPLIT_FILE_SIZE": {
       "description": "max size for split file",
       "required": false
-	}
+    }
+  }
+}
