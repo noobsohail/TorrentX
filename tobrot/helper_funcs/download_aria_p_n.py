@@ -309,9 +309,9 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                     pass
                 #
                 if is_file is None:
-                    msgg = f"🔌 <b>ᴄᴏɴɴᴇᴄᴛɪᴏɴs: {file.connections}</b>"
+                    msgg = f"🔌 ᴄᴏɴɴᴇᴄᴛɪᴏɴs: {file.connections}"
                 else:
-                    msgg = f"<b>[🟢 sᴇᴇᴅᴇʀ: {file.num_seeders}\n🔴 ᴘᴇᴇʀ: {file.connections}]</b>"
+                    msgg = f"🟢 sᴇᴇᴅᴇʀ: {file.num_seeders}\n🔴 ᴘᴇᴇʀ: {file.connections}"
 
                 percentage = int(file.progress_string(0).split('%')[0])
                 prog = "[{0}{1}]".format("".join([FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 10))]),"".join([UN_FINISHED_PROGRESS_STR for i in range(8 - math.floor(percentage / 10))]))
