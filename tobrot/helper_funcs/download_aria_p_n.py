@@ -325,7 +325,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 msg += f"\n{msgg}" 
                 msg += f"\n⚡️ sᴘᴇᴇᴅ: {file.download_speed_string()}" 
                 msg += f"\n📋 ɢɪᴅ: <code>{gid}</code>"
-                msg += f"\n\n<b>「 ⚙️ υѕιng engιne: ᗩᖇIᗩ2 」</b>"
+                msg += f"\n\n<b>「 ⚙️ υѕιng engιne: Qbittorrent 」</b>"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(
