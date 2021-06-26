@@ -108,12 +108,6 @@ if __name__ == "__main__":
     )
     app.add_handler(incoming_telegram_download_handler)
     #
-    incoming_purge_message_handler = MessageHandler(
-        incoming_purge_message_f,
-        filters=filters.command(["purge"]) & filters.chat(chats=AUTH_CHANNEL),
-    )
-    app.add_handler(incoming_purge_message_handler)
-    #
     incoming_clone_handler = MessageHandler(
         g_clonee,
         filters=filters.command([f"{CLONE_COMMAND_G}"])
