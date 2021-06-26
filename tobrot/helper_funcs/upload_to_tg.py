@@ -564,7 +564,7 @@ async def upload_single_file(
             time.sleep(g.x)
         except Exception as e:
             LOGGER.info(e)
-            await message_for_progress_display.edit_text("**🔴ғᴀɪʟᴇᴅ**\n" + str(e))
+            await message_for_progress_display.edit_text("**🔴 ғᴀɪʟᴇᴅ**\n" + str(e))
             LOGGER.exception(e)
         else:
             if message.message_id != message_for_progress_display.message_id:
