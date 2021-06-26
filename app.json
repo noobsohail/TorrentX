@@ -8,6 +8,7 @@
   "success_url": "https://t.me/ymoviez",
   "website": "https://www.yasir.my.id",
   "stack": "container"
+  {
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your bot token, Get it from @Botfather.",
