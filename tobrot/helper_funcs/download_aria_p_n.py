@@ -151,7 +151,8 @@ def add_url(aria_instance, text_url, c_file_name):
         download = aria_instance.add_uris(uris, options=options)
     except Exception as e:
         return (
-            False,🛑 ғᴀɪʟᴇᴅ** \ɴ" + sᴛʀ(ᴇ) + " \ɴᴅᴏ ɴᴏᴛ sᴇɴᴅ sʟᴏᴡ/ᴅᴇᴀᴅ ʟɪɴᴋ ᴏʀ ᴛᴏʀʀᴇɴᴛ",
+            False,
+            "** 🛑 ғᴀɪʟᴇᴅ**\n" + sᴛʀ(ᴇ) + " \ɴᴅᴏ ɴᴏᴛ sᴇɴᴅ sʟᴏᴡ/ᴅᴇᴀᴅ ʟɪɴᴋ ᴏʀ ᴛᴏʀʀᴇɴᴛ",
         )
     else:
         return True, "" + download.gid + ""
