@@ -252,9 +252,9 @@ async def upload_log_file(client, message):
 
 async def upload_as_doc(client, message):
     user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,True)
-    await message.reply_text("**🗞 ʏᴏᴜʀ ғɪʟᴇ\n📁 ᴜᴘʟᴏᴀᴅᴇᴅ ᴀs ᴅᴏᴄᴜᴍᴇɴᴛ**")
+    await message.reply_text("**🗞 ɴᴏᴡ ᴀʟʟ ʏᴏᴜʀ ғɪʟᴇ\n📁 ᴜᴘʟᴏᴀᴅᴇᴅ ᴀs ᴅᴏᴄᴜᴍᴇɴᴛ\n\nɴᴏᴡ ᴜsᴇ <code>/leech</code> ᴀɴᴅ ʀᴇᴘʟʏ ᴛᴏ ʟɪɴᴋ**")
 
 
 async def upload_as_video(client, message):
     user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,False)
-    await message.reply_text("**🗞 ʏᴏᴜʀ ғɪʟᴇ\n🎞️ ᴜᴘʟᴏᴀᴅᴇᴅ ᴀs sᴛʀᴇᴀᴍᴀʙʟᴇ**")
+    await message.reply_text("**🗞 ɴᴏᴡ ᴀʟʟ ʏᴏᴜʀ ғɪʟᴇ\n🎞️ ᴜᴘʟᴏᴀᴅᴇᴅ ᴀs sᴛʀᴇᴀᴍᴀʙʟᴇ**")
