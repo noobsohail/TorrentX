@@ -147,7 +147,7 @@ async def incoming_youtube_dl_f(client, message):
         yt_dl_pass_word = None
         cf_name = None
     else:
-        await i_m_sefg.edit(""🤦‍♂️ ɴᴏ ᴅᴏᴡɴʟᴏᴀᴅ sᴏᴜʀᴄᴇ ᴘʀᴏᴠɪᴅᴇᴅ ")
+        await i_m_sefg.edit("🤦‍♂️ ɴᴏ ᴅᴏᴡɴʟᴏᴀᴅ sᴏᴜʀᴄᴇ ᴘʀᴏᴠɪᴅᴇᴅ ")
         return
     if dl_url is not None:
         await i_m_sefg.edit_text("🗃️ ᴇxᴛʀᴀᴄᴛɪɴɢ ʟɪɴᴋ")
