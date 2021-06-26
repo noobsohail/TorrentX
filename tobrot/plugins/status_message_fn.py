@@ -71,7 +71,7 @@ async def status_message_f(client, message):
         # LOGGER.info(msg)
 
         if msg == "":
-            msg = "\n🤷‍♂️ No Active, Queued or Paused TORRENTs"
+            msg = "\n🤷‍♂️ ɴᴏ ᴀᴄᴛɪᴠᴇ ᴛᴏʀʀᴇɴᴛ ᴏʀ ᴘᴀᴜsᴇᴅ"
 
     hr, mi, se = up_time(time.time() - BOT_START_TIME)
     total, used, free = shutil.disk_usage(".")
@@ -80,14 +80,14 @@ async def status_message_f(client, message):
     free = humanbytes(free)
 
     ms_g = (
-        f'<b>╭───「  ⭕️ BOT STATISTICS ⭕️  」</b>\n' \
+        f'<b>╭───「  ⭕️ ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs ⭕️  」</b>\n' \
         f'<b>│</b>\n' \
-        f"<b>├  ⏰ Bot Uptime : {hr} : {mi} : {se}</b>\n" \
-        f'<b>├  💾 Total Disk Space : {total}</b>\n' \
-        f'<b>├  📀 Total Used Space : {used}</b>\n' \
-        f'<b>├  💿 Total Free Space : {free}</b>\n' \
+        f"<b>├  ⏰ ʙᴏᴛ ᴜᴘᴛɪᴍᴇ : {hr} : {mi} : {se}</b>\n" \
+        f'<b>├  💾 ᴅɪsᴋ sᴘᴀᴄᴇ : {total}</b>\n' \
+        f'<b>├  📀 ᴜsᴇᴅ sᴘᴀᴄᴇ : {used}</b>\n' \
+        f'<b>├  💿 ғʀᴇᴇ sᴘᴀᴄᴇ : {free}</b>\n' \
         f'<b>│</b>\n' \
-        f'<b>╰───「 🚸 TorrentLeechX 🚸 」</b>'
+        f'<b>╰───「 🚸 ᴀʀᴀᴛᴀ ʟᴇᴇᴄʜ 🚸 」</b>'
     )
     # LOGGER.info(ms_g)
 
@@ -107,7 +107,7 @@ async def status_message_f(client, message):
 async def cancel_message_f(client, message):
     if len(message.command) > 1:
         # /cancel command
-        i_m_s_e_g = await message.reply_text("checking..?", quote=True)
+        i_m_s_e_g = await message.reply_text("ᴄʜᴇᴄᴋɪɴɢ...?", quote=True)
         aria_i_p = await aria_start()
         g_id = message.command[1].strip()
         LOGGER.info(g_id)
@@ -117,7 +117,7 @@ async def cancel_message_f(client, message):
             LOGGER.info(downloads.remove(force=True, files=True))
             await i_m_s_e_g.edit_text("Leech Cancelled")
         except Exception as e:
-            await i_m_s_e_g.edit_text("<i>FAILED</i>\n\n" + str(e) + "\n#error")
+            await i_m_s_e_g.edit_text("<i>ғᴀɪʟᴇᴅ</i>\n\n" + str(e) + "\n#error")
     else:
         await message.delete()
 
@@ -164,7 +164,7 @@ async def exec_message_f(client, message):
 
 
 async def upload_document_f(client, message):
-    imsegd = await message.reply_text("processing ...")
+    imsegd = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
     if message.from_user.id in AUTH_CHANNEL:
         if " " in message.text:
             recvd_command, local_file_name = message.text.split(" ", 1)
@@ -177,7 +177,7 @@ async def upload_document_f(client, message):
 
 async def eval_message_f(client, message):
     if message.from_user.id in AUTH_CHANNEL:
-        status_message = await message.reply_text("Processing ...")
+        status_message = await message.reply_text("ᴘʀᴏᴄᴇssɪɴɢ...")
         cmd = message.text.split(" ", maxsplit=1)[1]
 
         reply_to_id = message.message_id
@@ -252,9 +252,9 @@ async def upload_log_file(client, message):
 
 async def upload_as_doc(client, message):
     user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,True)
-    await message.reply_text("**🗞 Your Files Will Be Uploaded As Document 📁**")
+    await message.reply_text("**🗞 ʏᴏᴜʀ ғɪʟᴇ\n📁 ᴜᴘʟᴏᴀᴅᴇᴅ ᴀs ᴅᴏᴄᴜᴍᴇɴᴛ**")
 
 
 async def upload_as_video(client, message):
     user_specific_config[message.from_user.id]=UserDynaConfig(message.from_user.id,False)
-    await message.reply_text("**🗞 Your Files Will Be Uploaded As Streamable 🎞**")
+    await message.reply_text("**🗞 ʏᴏᴜʀ ғɪʟᴇ\n🎞️ ᴜᴘʟᴏᴀᴅᴇᴅ ᴀs sᴛʀᴇᴀᴍᴀʙʟᴇ**")
