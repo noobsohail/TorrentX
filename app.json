@@ -21,29 +21,103 @@
         "required": true
       },
       "APP_ID": {
-        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "description": "Get at https://my.telegram.org/apps",
         "required": true
       },
       "API_HASH": {
-        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "description": "Get at https://my.telegram.org/apps",
         "required": true
       },
       "OWNER_ID": {
-        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "description": "ID of the bot owner, He/she can be abled to access bot in bot only mode too(private mode).",
         "required": true
       },
       "AUTH_CHANNEL": {
-        "description": "This is the folder ID of the Google Drive Folder to which you want to upload all the mirrors.",
+        "description": "Create a Super Group in Telegram, add @missrose_bot to the group, and send /id in the chat, to get this value,can mutli split by space",
         "required": true
       },
       "EDIT_SLEEP_TIME_OUT": {
-        "description": "The path to the local folder where the downloads should be downloaded to.",
+        "description": "should be an integer. Number of seconds to wait before editing a message.",
         "value": "15",
         "required": false
 	  },
       "MAX_TG_SPLIT_FILE_SIZE": {
-        "description": "The path to the local folder where the downloads should be downloaded to.",
+        "description": "max file size limit for Telegram Upload in Splitting.. Like If you send 10gb file it will send in 2gb pieces..value should be in bytes like 2000000000",
         "value": "1072864000",
+        "required": false
+	  },
+      "FINISHED_PROGRESS_STR": {
+        "description": "change the progress bar",
+        "value": "",
+        "required": false
+	  },
+      "UN_FINISHED_PROGRESS_STR": {
+        "description": "change the progress bar",
+        "required": false
+      },
+      "LEECH_COMMAND": {
+        "description": "custom command for /leech",
+        "value": "",
+        "required": false
+	  },
+      "YTDL_COMMAND": {
+        "description": "custom command for /ytdl",
+        "value": "",
+        "required": false
+	  },
+      "TELEGRAM_LEECH_UNZIP_COMMAND": {
+        "description": "custom command for /tleechunzip",
+        "value": "",
+        "required": false
+	  },
+      "PYTDL_COMMAND": {
+        "description": "custom command for /pytdl",
+        "value": "",
+        "required": false
+	  },
+      "SAVE_THUMBNAIL": {
+        "description": "custom command for /savethumbnail",
+        "value": "",
+        "required": false
+	  },
+      "CLEAR_THUMBNAIL": {
+        "description": "custom command for /clearthumbnail",
+        "value": "",
+        "required": false
+	  },
+      "RENAME_COMMAND": {
+        "description": "Custom Rename Command Which should Be Set Via Vars Default is /rename",
+        "value": "",
+        "required": false
+	  },
+      "TOGGLE_VID": {
+        "description": "Custom Cmd for TOGGLE_DOC default is /togglevid",
+        "value": "",
+        "required": false
+	  },
+      "TOGGLE_DOC": {
+        "description": "Custom Cmd for TOGGLE_DOC default is /toggledoc",
+        "value": "",
+        "required": false
+	  },
+      "LOG_COMMAND": {
+        "description": "Custom command for /log",
+        "value": "",
+        "required": false
+	  },
+      "HELP_COMMAND": {
+        "description": "Custom command for /help",
+        "value": "",
+        "required": false
+	  },
+      "STATUS_COMMAND": {
+        "description": "Custom Command for /status",
+        "value": "",
+        "required": false
+	  },
+      "CUSTOM_FILE_NAME": {
+        "description": "custom filename for every single files or folders on leeching completion...",
+        "value": "",
         "required": false
     }
   }
