@@ -12,7 +12,6 @@
     "success_url": "https://t.me/arata74",
     "stack": "container",
     "env": {
-      },
       "TG_BOT_TOKEN": {
         "description": "The telegram bot token that you get from @BotFather.",
         "required": true
