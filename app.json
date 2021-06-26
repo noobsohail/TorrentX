@@ -1,11 +1,11 @@
 {
   "name": "Telegram Torrent Leecher",
-  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Powered by @torrentleechgdrivesupport!",
+  "description": "A Telegram Torrent (and youtube-dl) Leecher based on Pyrogram. Using Aria as engine",
   "keywords": [
     "telegram"
   ],
-  "repository": "https://github.com/yasirarism",
-  "success_url": "https://t.me/ymoviez",
-  "website": "https://www.yasir.my.id",
+  "repository": "https://github.com/yuno74/TorrentLeechX/",
+  "success_url": "https://t.me/arata74",
+  "website": "https://t.me/arata74",
   "stack": "container"
 }
