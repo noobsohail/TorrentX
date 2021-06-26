@@ -93,7 +93,7 @@ def add_magnet(aria_instance, magnetic_link, c_file_name):
     except Exception as e:
         return (
             False,
-            "**🛑 𝙁𝘼𝙄𝙇𝙀𝘿** \n" + str(e) + " \n𝙋𝙡𝙚𝙖𝙨𝙚 𝙙𝙤 𝙣𝙤𝙩 𝙨𝙚𝙣𝙙 𝙎𝙇𝙊𝙒/𝘿𝙀𝘼𝘿 𝙡𝙞𝙣𝙠𝙨 𝙤𝙧 𝙘𝙝𝙚𝙘𝙠 𝙨𝙥𝙖𝙘𝙚𝙨.😡",
+            "**🛑 ғᴀɪʟᴇᴅ** \n" + str(e) + " \nᴅᴏ ɴᴏᴛ sᴇɴᴅ sʟᴏᴡ/ᴅᴇᴀᴅ ʟɪɴᴋ ᴏʀ ᴛᴏʀʀᴇɴᴛ",
         )
     else:
         return True, "" + download.gid + ""
@@ -103,9 +103,9 @@ def add_torrent(aria_instance, torrent_file_path):
     if torrent_file_path is None:
         return (
             False,
-            "**🔴 FAILED** \n"
+            "**🔴 ғᴀɪʟᴇᴅ** \n"
             + str(e)
-            + " \n𝙨𝙤𝙢𝙚𝙩𝙝𝙞𝙣𝙜 𝙬𝙧𝙤𝙣𝙜 𝙤𝙘𝙘𝙪𝙧𝙧𝙚𝙙 𝙬𝙝𝙚𝙣 𝙩𝙧𝙮𝙞𝙣𝙜 𝙩𝙤 𝙖𝙙𝙙 <u>𝙏𝙊𝙍𝙍𝙀𝙉𝙏</u> 𝙛𝙞𝙡𝙚❌",
+            + " \n❌ sᴏᴍᴇᴛɪɴɢ ᴡʀᴏɴɢ ᴏᴄᴄᴜʀʀᴇᴅ ᴡʜᴇɴ ᴛʀʏ ᴀᴅᴅ<u>ᴛᴏʀʀᴇɴᴛ</u>ғɪʟᴇ",
         )
     if os.path.exists(torrent_file_path):
         # Add Torrent Into Queue
@@ -116,14 +116,12 @@ def add_torrent(aria_instance, torrent_file_path):
         except Exception as e:
             return (
                 False,
-                "**🛑 𝙁𝘼𝙄𝙇𝙀𝘿** \n"
-                + str(e)
-                + " \n𝙋𝙡𝙚𝙖𝙨𝙚 𝙙𝙤 𝙣𝙤𝙩 𝙨𝙚𝙣𝙙 𝙎𝙇𝙊𝙒/𝘿𝙀𝘼𝘿 𝙡𝙞𝙣𝙠𝙨 𝙤𝙧 𝙘𝙝𝙚𝙘𝙠 𝙨𝙥𝙖𝙘𝙚𝙨.😡",
-            )
+                🛑 ғᴀɪʟᴇᴅ** \ɴ" + sᴛʀ(ᴇ) + " \ɴᴅᴏ ɴᴏᴛ sᴇɴᴅ sʟᴏᴡ/ᴅᴇᴀᴅ ʟɪɴᴋ ᴏʀ ᴛᴏʀʀᴇɴᴛ",
+        )
         else:
             return True, "" + download.gid + ""
     else:
-        return False, "**🛑 𝙁𝘼𝙄𝙇𝙀𝘿** \n𝙋𝙡𝙚𝙖𝙨𝙚 𝙩𝙧𝙮 𝙤𝙩𝙝𝙚𝙧 𝙨𝙤𝙪𝙧𝙘𝙚𝙨 𝙩𝙤 𝙜𝙚𝙩 𝙬𝙤𝙧𝙠𝙖𝙗𝙡𝙚 𝙡𝙞𝙣𝙠😡"
+        return False, "**🛑 ғᴀɪʟᴇᴅ** \nᴛʀʏ ᴏᴛʜᴇʀ sᴏᴜʀᴄᴇ"
 
 
 def add_url(aria_instance, text_url, c_file_name):
@@ -151,8 +149,7 @@ def add_url(aria_instance, text_url, c_file_name):
         download = aria_instance.add_uris(uris, options=options)
     except Exception as e:
         return (
-            False,
-            "**🛑 𝙁𝘼𝙄𝙇𝙀𝘿** \n" + str(e) + " \n𝙋𝙡𝙚𝙖𝙨𝙚 𝙙𝙤 𝙣𝙤𝙩 𝙨𝙚𝙣𝙙 𝙎𝙇𝙊𝙒/𝘿𝙀𝘼𝘿 𝙡𝙞𝙣𝙠𝙨 𝙤𝙧 𝙘𝙝𝙚𝙘𝙠 𝙨𝙥𝙖𝙘𝙚𝙨.😡",
+            False,🛑 ғᴀɪʟᴇᴅ** \ɴ" + sᴛʀ(ᴇ) + " \ɴᴅᴏ ɴᴏᴛ sᴇɴᴅ sʟᴏᴡ/ᴅᴇᴀᴅ ʟɪɴᴋ ᴏʀ ᴛᴏʀʀᴇɴᴛ",
         )
     else:
         return True, "" + download.gid + ""
@@ -200,7 +197,7 @@ async def call_apropriate_function(
                 aria_instance, err_message, sent_message_to_update_tg_p, None
             )
         else:
-            return False, "🔴 𝙘𝙖𝙣'𝙩 𝙜𝙚𝙩 𝙢𝙚𝙩𝙖𝙙𝙖𝙩𝙖 \n\n#DeadTorrent ☠️"
+            return False, "🔴 ᴄᴀɴ'ᴛ ᴅᴏᴡɴʟᴏᴀᴅ \n\n#DeadTorrent ☠️"
     await asyncio.sleep(1)
     file = aria_instance.get_download(err_message)
     to_upload_file = file.name
@@ -220,7 +217,7 @@ async def call_apropriate_function(
         except Exception as ge:
             LOGGER.info(ge)
             LOGGER.info(
-                f"😐 𝘾𝙖𝙣'𝙩 𝙚𝙭𝙩𝙧𝙖𝙘𝙩 {os.path.basename(to_upload_file)}, 𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙩𝙝𝙚 𝙨𝙖𝙢𝙚 𝙛𝙞𝙡𝙚 😐"
+                f"😐 ᴄᴀɴ'ᴛ ᴇxᴛʀᴀᴄᴛ {os.path.basename(to_upload_file)}"
             )
 
     if to_upload_file:
@@ -270,12 +267,12 @@ async def call_apropriate_function(
                     message_to_send += "\n"
                 if message_to_send != "":
                     mention_req_user = (
-                        f"\n<a href='tg://user?id={user_id}'>🤗 DONE</a>\n"
+                        f"\n<a href='tg://user?id={user_id}'>🤗 ᴅᴏɴᴇ</a>\n"
                     )
-                    message_to_send = f"\n<code>{str(file.name)}</code>\n\n💾 𝙏𝙤𝙩𝙖𝙡 𝙁𝙞𝙡𝙚 𝙎𝙞𝙯𝙚: <b>{file.total_length_string()}</b>\n\n" + message_to_send 
+                    message_to_send = f"\n<code>{str(file.name)}</code>\n\n💾 ᴛᴏᴛᴀʟ ғɪʟᴇ sɪᴢᴇ: <b>{file.total_length_string()}</b>\n\n" + message_to_send 
                     message_to_send = message_to_send + "\n\n" + mention_req_user + f"<b>#uploads</b>"
                 else:
-                    message_to_send = "<i>🔴 𝙁𝘼𝙄𝙇𝙀𝘿</i> 𝙩𝙤 𝙪𝙥𝙡𝙤𝙖𝙙 𝙛𝙞𝙡𝙚𝙨 😞"
+                    message_to_send = "<i>🔴 ғᴀɪʟᴇᴅ</i> ᴛᴏ ᴜᴘʟᴏᴀᴅ ғɪʟᴇ"
                 await user_message.reply_text(
                     text=message_to_send, quote=True, disable_web_page_preview=True
                 )
@@ -300,7 +297,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 # sometimes, this weird https://t.me/c/1220993104/392975
                 # error creeps up
                 # TODO: temporary workaround
-                downloading_dir_name = "ᴄʜᴇᴄᴋɪɴɢ"
+                downloading_dir_name = "ᴄʜᴇᴄᴋɪɴɢ..."
                 try:
                     # another derp -_-
                     # https://t.me/c/1220993104/423318
@@ -325,12 +322,12 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                 msg += f"\n{msgg}" 
                 msg += f"\n⚡️ sᴘᴇᴇᴅ: {file.download_speed_string()}" 
                 msg += f"\n📋 ɢɪᴅ: <code>{gid}</code>"
-                msg += f"\n\n<b>「 ⚙️ Using Engine:-Aria2 」</b>"
+                msg += f"\n\n<b>「 ⚙️ υѕιng engιne: ᗩᖇIᗩ2 」</b>"
                 inline_keyboard = []
                 ikeyboard = []
                 ikeyboard.append(
                     InlineKeyboardButton(
-                        "❌ᴄᴀɴᴄᴇʟ", callback_data=(f"cancel {gid}").encode("UTF-8")
+                        "❌ ᴄᴀɴᴄᴇʟ", callback_data=(f"cancel {gid}").encode("UTF-8")
                     )
                 )
                 inline_keyboard.append(ikeyboard)
@@ -348,7 +345,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
                         previous_message = msg
                     else:
                         LOGGER.info(
-                            f"🔴𝘾𝙖𝙣𝙘𝙚𝙡𝙡𝙞𝙣𝙜 𝙙𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙤𝙛 {file.name} 𝙢𝙖𝙮 𝙗𝙚 𝙙𝙪𝙚 𝙩𝙤 𝙨𝙡𝙤𝙬 𝙩𝙤𝙧𝙧𝙚𝙣𝙩🐌"
+                            f"🔴 ᴄᴀɴᴄᴇʟɪɴɢ ᴅᴏᴡɴʟᴏᴀᴅ ᴏғ {file.name} ᴅᴜᴇ sʟᴏᴡ ᴛᴏʀʀᴇɴᴛ ᴏʀ ᴅᴇᴀᴅ ʟɪɴᴋ"
                         )
                         await event.edit(
                             f"🔴 ᴅᴏᴡɴʟᴏᴀᴅ ᴄᴀɴᴄᴇʟʟᴇᴅ :\n<code>{file.name}</code>\n\n #DeadTorrent⚰️"
@@ -365,7 +362,7 @@ async def check_progress_for_dl(aria2, gid, event, previous_message):
             await check_progress_for_dl(aria2, gid, event, previous_message)
         else:
             LOGGER.info(
-                f"🟢𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙙 𝙎𝙪𝙘𝙘𝙚𝙨𝙨𝙛𝙪𝙡𝙡𝙮: `{file.name} ({file.total_length_string()})` 🤗"
+                f"🟢 ᴅᴏᴡɴʟᴏᴀᴅ sᴜᴄᴄᴇssғᴜʟʟʏ : `{file.name} ({file.total_length_string()})`"
             )
             await asyncio.sleep(EDIT_SLEEP_TIME_OUT)
             await event.edit(
