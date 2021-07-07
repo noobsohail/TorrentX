@@ -12,49 +12,109 @@
     "success_url": "https://t.me/arata74",
     "stack": "container",
     "env": {
-      "HEROKU_EMAIL": {
-        "description": "",
+      "TG_BOT_TOKEN": {
+        "description": "The telegram bot token that you get from @BotFather.",
         "required": true
       },
-      "HEROKU_API_KEY": {
-        "description": "",
-        "required": true
-      },
-      "HEROKU_APP_NAME": {
-        "description": "",
-        "required": true
-      },
-      "BOT_TOKEN": {
-        "description": "",
-        "required": true
-      },
-      "API_ID": {
-        "description": "",
+      "APP_ID": {
+        "description": "Get at https://my.telegram.org/apps",
         "required": true
       },
       "API_HASH": {
-        "description": "",
-        "value": "",
+        "description": "Get at https://my.telegram.org/apps",
         "required": true
-	  },
+      },
       "OWNER_ID": {
-        "description": "",
+        "description": "ID of the bot owner, He/she can be abled to access bot in bot only mode too(private mode).",
+        "required": true
+      },
+      "AUTH_CHANNEL": {
+        "description": "Create a Super Group in Telegram, add @missrose_bot to the group, and send /id in the chat, to get this value,can mutli split by space",
+        "required": true
+      },
+      "EDIT_SLEEP_TIME_OUT": {
+        "description": "should be an integer. Number of seconds to wait before editing a message.",
+        "value": "15",
+        "required": false
+	  },
+      "MAX_TG_SPLIT_FILE_SIZE": {
+        "description": "max file size limit for Telegram Upload in Splitting.. Like If you send 10gb file it will send in 2gb pieces..value should be in bytes like 2000000000",
+        "value": "1072864000",
+        "required": false
+	  },
+      "FINISHED_PROGRESS_STR": {
+        "description": "change the progress bar",
         "value": "",
-        "required": true
+        "required": false
 	  },
-      "ALD_USR": {
-        "description": "",
+      "UN_FINISHED_PROGRESS_STR": {
+        "description": "change the progress bar",
+        "required": false
+      },
+      "LEECH_COMMAND": {
+        "description": "custom command for /leech",
         "value": "",
-        "required": true
+        "required": false
 	  },
-      "BASE_URL_OF_BOT": {
-        "description": "",
-        "required": true
+      "YTDL_COMMAND": {
+        "description": "custom command for /ytdl",
+        "value": "",
+        "required": false
 	  },
-      {
-      "plan": "heroku-postgresql",
-      "options": {
-        "version": "9.5"	
+      "TELEGRAM_LEECH_UNZIP_COMMAND": {
+        "description": "custom command for /tleechunzip",
+        "value": "",
+        "required": false
+	  },
+      "PYTDL_COMMAND": {
+        "description": "custom command for /pytdl",
+        "value": "",
+        "required": false
+	  },
+      "SAVE_THUMBNAIL": {
+        "description": "custom command for /savethumbnail",
+        "value": "",
+        "required": false
+	  },
+      "CLEAR_THUMBNAIL": {
+        "description": "custom command for /clearthumbnail",
+        "value": "",
+        "required": false
+	  },
+      "RENAME_COMMAND": {
+        "description": "Custom Rename Command Which should Be Set Via Vars Default is /rename",
+        "value": "",
+        "required": false
+	  },
+      "TOGGLE_VID": {
+        "description": "Custom Cmd for TOGGLE_VID default is /togglevid",
+        "value": "",
+        "required": false
+	  },
+      "TOGGLE_DOC": {
+        "description": "Custom Cmd for TOGGLE_DOC default is /toggledoc",
+        "value": "",
+        "required": false
+	  },
+      "LOG_COMMAND": {
+        "description": "Custom command for /log",
+        "value": "",
+        "required": false
+	  },
+      "HELP_COMMAND": {
+        "description": "Custom command for /help",
+        "value": "",
+        "required": false
+	  },
+      "STATUS_COMMAND": {
+        "description": "Custom Command for /status",
+        "value": "",
+        "required": false
+	  },
+      "CUSTOM_FILE_NAME": {
+        "description": "custom filename for every single files or folders on leeching completion...",
+        "value": "",
+        "required": false
     }
   }
 }
