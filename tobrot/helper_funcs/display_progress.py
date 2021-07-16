@@ -76,7 +76,7 @@ class Progress:
             elapsed_time = TimeFormatter(milliseconds=elapsed_time)
             estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
-            progress = "\n[{0}{1}] \n\n💯 ᴘʀᴏɢʀᴇss: {2}%\n\n💾 ᴄᴏᴍᴘʟᴇᴛᴇᴅ: ".format(
+            progress = "\n[{0}{1}] \n\n💯 ᴘʀᴏɢʀᴇss: {2}%\n⚙️ ᴇɴɢɪɴᴇ: ᴘʏʀᴏɢʀᴀᴍ\n💾 ᴄᴏᴍᴘʟᴇᴛᴇᴅ:\n ".format(
                 "".join(
                     [FINISHED_PROGRESS_STR for i in range(math.floor(percentage / 10))]
                 ),
@@ -89,7 +89,7 @@ class Progress:
                 round(percentage, 2),
             )
 
-            tmp = progress + "{0} of {1}\n\n⚡ sᴘᴇᴇᴅ: {2}/s\n\n⏰ ᴇᴛᴀ: {3}\n\n".format(
+            tmp = progress + "✅ ᴅᴏɴᴇ: {0}\n💾 ᴛᴏᴛᴀʟ ғɪʟᴇ sɪᴢᴇ : {1}\n⚡ sᴘᴇᴇᴅ: {2}/s\n⏰ ᴇᴛᴀ: {3}\n\n".format(
                 humanbytes(current),
                 humanbytes(total),
                 humanbytes(speed),
