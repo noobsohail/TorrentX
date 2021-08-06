@@ -51,11 +51,11 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 APP_ID = int(os.environ.get("APP_ID", "12345"))
 API_HASH = os.environ.get("API_HASH")
-OWNER_ID = int(os.environ.get("OWNER_ID", "539295917"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "1230663194"))
 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
-AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "539295917").split()]
+AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "1230663194").split()]
 
 # the download location, where the HTTP Server runs
 DOWNLOAD_LOCATION = "./DOWNLOADS"
@@ -63,13 +63,13 @@ DOWNLOAD_LOCATION = "./DOWNLOADS"
 MAX_FILE_SIZE = 50000000
 TG_MAX_FILE_SIZE = 2097152000
 FREE_USER_MAX_FILE_SIZE = 50000000
-AUTH_CHANNEL.append(539295917)
+AUTH_CHANNEL.append(1230663194)
 AUTH_CHANNEL.append(OWNER_ID)
 # chunk size that should be used with requests
 CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", "128"))
 # default thumbnail to be used in the videos
 DEF_THUMB_NAIL_VID_S = os.environ.get(
-    "DEF_THUMB_NAIL_VID_S", "https://via.placeholder.com/90.jpg"
+    "DEF_THUMB_NAIL_VID_S", "https://telegra.ph/file/f7548659d5563bf2967b9.png"
 )
 # maximum message length in Telegram
 MAX_MESSAGE_LENGTH = 4096
@@ -78,7 +78,7 @@ PROCESS_MAX_TIMEOUT = 3600
 #
 SP_LIT_ALGO_RITH_M = os.environ.get("SP_LIT_ALGO_RITH_M", "hjs")
 ARIA_TWO_STARTED_PORT = int(os.environ.get("ARIA_TWO_STARTED_PORT", "6800"))
-EDIT_SLEEP_TIME_OUT = int(os.environ.get("EDIT_SLEEP_TIME_OUT", "15"))
+EDIT_SLEEP_TIME_OUT = int(os.environ.get("EDIT_SLEEP_TIME_OUT", "5"))
 MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START = int(
     os.environ.get("MAX_TIME_TO_WAIT_FOR_TORRENTS_TO_START", 600)
 )
@@ -98,7 +98,7 @@ GLEECH_ZIP_COMMAND = os.environ.get("GLEECH_ZIP_COMMAND", "")
 YTDL_COMMAND = os.environ.get("YTDL_COMMAND", "ytdl")
 GYTDL_COMMAND = os.environ.get("GYTDL_COMMAND", "")
 RCLONE_CONFIG = os.environ.get("RCLONE_CONFIG", "")
-DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "TorrentLeech-Gdrive")
+DESTINATION_FOLDER = os.environ.get("DESTINATION_FOLDER", "Bot")
 INDEX_LINK = os.environ.get("INDEX_LINK", "")
 TELEGRAM_LEECH_COMMAND = os.environ.get("TELEGRAM_LEECH_COMMAND", "")
 TELEGRAM_LEECH_UNZIP_COMMAND = os.environ.get(

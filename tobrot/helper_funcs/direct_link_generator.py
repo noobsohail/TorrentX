@@ -39,7 +39,7 @@ def direct_link_generator(text_url: str):
     elif 'racaty.net' in text_url:
         return racaty(text_url)
     else:
-        raise DirectDownloadLinkException(f'No Direct link function found for {text_url}')
+        raise DirectDownloadLinkException(f'Shit you lowly human which link you sent? i cant find any files | Error #1 {text_url}')
 
 
 def zippy_share(url: str) -> str:

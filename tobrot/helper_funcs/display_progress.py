@@ -50,7 +50,7 @@ class Progress:
             [
                 [
                     InlineKeyboardButton(
-                        "❌ ᴄᴀɴᴄᴇʟ",
+                        "❌CANCEL",
                         callback_data=(
                             f"gUPcancel/{chat_id}/{mes_id}/{from_user}"
                         ).encode("UTF-8"),
@@ -61,7 +61,7 @@ class Progress:
         if self.is_cancelled:
             LOGGER.info("stopping ")
             await self._mess.edit(
-                f"🔴 ʟᴇᴇᴄʜ ᴄᴀɴᴄᴇʟʟᴇᴅ: `{ud_type}` ({humanbytes(total)})"
+                f"Shit You Human Listen | Your leech cancelled : `{ud_type}` ({humanbytes(total)})"
             )
             await self._client.stop_transmission()
 
